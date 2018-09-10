@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickup
+  - Score
+  - Play
+  - Endless
+  - Customize
+  - Settings
+  - BackToMenu
+  - FloorCount
+  - Highscore
+  - Obstacle
+  - wallBackground
   layers:
   - Default
   - TransparentFX

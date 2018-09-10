@@ -50,8 +50,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4199719380647746}
   - component: {fileID: 212076533333346722}
-  - component: {fileID: 61980170247138784}
   - component: {fileID: 50931018149911012}
+  - component: {fileID: 68198413579183008}
   m_Layer: 0
   m_Name: platformRight
   m_TagString: Untagged
@@ -68,9 +68,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4994285868082808}
   - component: {fileID: 212732444594386112}
-  - component: {fileID: 61980692063671114}
   - component: {fileID: 114099563435924830}
   - component: {fileID: 50052596978449282}
+  - component: {fileID: 68471093437888550}
   m_Layer: 0
   m_Name: platformLeft
   m_TagString: Untagged
@@ -87,8 +87,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4654504969618618}
   - component: {fileID: 212431479536787476}
-  - component: {fileID: 61269370728826828}
   - component: {fileID: 50265444976969906}
+  - component: {fileID: 68510368209710796}
   m_Layer: 0
   m_Name: platformMiddle
   m_TagString: Untagged
@@ -103,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1465252118272254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -41, z: 0}
+  m_LocalPosition: {x: 0, y: -278, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4994285868082808}
@@ -225,33 +225,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61269370728826828
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1776296988167312}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.28}
-    newSize: {x: 0.7, y: 0.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.28}
-  m_EdgeRadius: 0
---- !u!61 &61980170247138784
-BoxCollider2D:
+--- !u!68 &68198413579183008
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -263,20 +238,13 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.28}
-    newSize: {x: 0.7, y: 0.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.28}
   m_EdgeRadius: 0
---- !u!61 &61980692063671114
-BoxCollider2D:
+  m_Points:
+  - {x: -0.3499999, y: -0.14089793}
+  - {x: -0.35346365, y: 0.13487002}
+  - {x: 0.36045003, y: 0.13567948}
+--- !u!68 &68471093437888550
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -288,18 +256,30 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.28}
-    newSize: {x: 0.7, y: 0.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.28}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.3499999, y: 0.14089793}
+  - {x: 0.35151124, y: 0.13990274}
+  - {x: 0.3499999, y: -0.14611635}
+--- !u!68 &68510368209710796
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776296988167312}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.34999996, y: -0.14611639}
+  - {x: -0.35127807, y: 0.14611639}
+  - {x: 0.34738925, y: 0.14347357}
+  - {x: 0.34999996, y: -0.14089793}
 --- !u!114 &114099563435924830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,6 +291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53bba851884a5f4484db65335bdfed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldProbability: 500
+  sandProbability: 150
+  diamondProbability: 0
+  emptyProbability: 350
+  probabilityMultiplier: 1
 --- !u!212 &212076533333346722
 SpriteRenderer:
   m_ObjectHideFlags: 1

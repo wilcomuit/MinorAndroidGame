@@ -65,9 +65,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4438495829118332}
   - component: {fileID: 212634714778202112}
-  - component: {fileID: 61506494821845000}
   - component: {fileID: 114932910566502430}
   - component: {fileID: 50132855454450810}
+  - component: {fileID: 68433073809092182}
   m_Layer: 0
   m_Name: platform
   m_TagString: Untagged
@@ -108,7 +108,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240517404697342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -44, z: 0}
+  m_LocalPosition: {x: 0, y: -281, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4143010169140736}
@@ -150,8 +150,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61506494821845000
-BoxCollider2D:
+--- !u!68 &68433073809092182
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -163,18 +163,12 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 0.28}
-    newSize: {x: 0.7, y: 0.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.28}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.35, y: -0.13888314}
+  - {x: -0.3481062, y: 0.13888314}
+  - {x: 0.3469911, y: 0.14058766}
+  - {x: 0.34710297, y: -0.13888316}
 --- !u!114 &114932910566502430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,6 +180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53bba851884a5f4484db65335bdfed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldProbability: 500
+  sandProbability: 150
+  diamondProbability: 0
+  emptyProbability: 350
+  probabilityMultiplier: 1
 --- !u!212 &212634714778202112
 SpriteRenderer:
   m_ObjectHideFlags: 1
