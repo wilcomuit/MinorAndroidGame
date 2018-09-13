@@ -17,7 +17,7 @@ public class WaterController : MonoBehaviour {
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        height = GetComponent<Renderer>().bounds.size.y;
+        height = GetComponent<BoxCollider2D>().bounds.size.y;
         waterSpeed = initialWaterSpeed;
         rb2d.velocity = new Vector2(0, -waterSpeed);
         StartWater();
@@ -44,6 +44,9 @@ public class WaterController : MonoBehaviour {
                     saving = true;
                     Data dataObject = GameController.dataStorage;
                     dataObject.setMoney(GameController.score);
+                    EndGameController.highscore = dataObject.getHighestFloors();
+                    EndGameController.floors = GameController.amountOfPlatforms;
+                    EndGameController.finished = false;
                     if (dataObject.getHighestFloors() < GameController.amountOfPlatforms)
                     {
                         dataObject.setHighestFloors(GameController.amountOfPlatforms);
@@ -59,7 +62,7 @@ public class WaterController : MonoBehaviour {
                 Debug.Log(e.Message);
             } finally {
                 saving = false;
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("Result");
             }
         }
     }

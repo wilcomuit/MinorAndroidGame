@@ -15,6 +15,15 @@ TagManager:
   - Highscore
   - Obstacle
   - wallBackground
+  - Pickup2
+  - ProbabilityTest
+  - EndGameMessage
+  - EndGameScore
+  - EndGameMoney
+  - EndGameHighscore
+  - SpeedMultiplier1
+  - SpeedMultiplier2
+  - SpeedMultiplier3
   layers:
   - Default
   - TransparentFX

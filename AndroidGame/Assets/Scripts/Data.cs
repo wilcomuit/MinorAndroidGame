@@ -10,15 +10,22 @@ public class Data {
     private int highestFloors;
     private int totalFloors;
     private int finishedGames;
-    public static Data defaultData = new Data(null, 0, 0, 0, 0);
+    private List<int> skins;
+    private int moneyMultiplier;
+    private int selectedSkin;
+    public static List<int> defaultSkinList = new List<int>();
+    public static Data defaultData = new Data(null, 0, 0, 0, 0, defaultSkinList, 1, 1);
 
-    private Data(string playerName, int money, int highestFloors, int totalFloors, int finishedGames)
+    private Data(string playerName, int money, int highestFloors, int totalFloors, int finishedGames, List<int> skins, int moneyMultiplier, int selectedSkin)
     {
         this.playerName = playerName;
         this.money = money;
         this.highestFloors = highestFloors;
         this.totalFloors = totalFloors;
         this.finishedGames = finishedGames;
+        this.skins = skins;
+        this.moneyMultiplier = moneyMultiplier;
+        this.selectedSkin = selectedSkin;
     }
 
     public string getPlayerName()
@@ -60,5 +67,33 @@ public class Data {
     public void setFinishedGames(int finishedGames)
     {
         this.finishedGames = finishedGames;
+    }
+    public List<int> getSkins()
+    {
+        return this.skins;
+    }
+    public void setSkins(List<int> skins)
+    {
+        this.skins = skins;
+    }
+    public void addSkin(int skin)
+    {
+        this.skins.Add(skin);
+    }
+    public int getMoneyMultiplier()
+    {
+        return this.moneyMultiplier;
+    }
+    public void setMoneyMultiplier(int moneyMultiplier)
+    {
+        this.moneyMultiplier = moneyMultiplier;
+    }
+    public int getSelectedSkin()
+    {
+        return this.selectedSkin;
+    }
+    public void setSelectedSkin(int selectedSkin)
+    {
+        this.selectedSkin = selectedSkin;
     }
 }

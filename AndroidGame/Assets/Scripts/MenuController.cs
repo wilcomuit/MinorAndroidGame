@@ -13,6 +13,8 @@ public class MenuController : MonoBehaviour {
     public static float savedWaterSpeed = 0;
     public static bool paused = false;
 
+    
+
     void Start () {
         
 	}
@@ -40,6 +42,24 @@ public class MenuController : MonoBehaviour {
         
     }
 
+    public void OnEndlessClick()
+    {
+        GameController.gameType = ENDLESS;
+        GameController.amountOfPlatforms = 0;
+        GameController.score = 0;
+        if (DataDeserializer.Deserialize().getHighestFloors() == 0) SceneManager.LoadScene("Instructions");
+        else SceneManager.LoadScene("Game");
+    }
+
+    public void OnPlayClick()
+    {
+        GameController.gameType = FLOORS;
+        GameController.amountOfPlatforms = 0;
+        GameController.score = 0;
+        if (DataDeserializer.Deserialize().getHighestFloors() == 0) SceneManager.LoadScene("Instructions");
+        else SceneManager.LoadScene("Game");
+    }
+
     public void OnMouseUp()
     {
         switch (gameObject.tag)
@@ -48,7 +68,8 @@ public class MenuController : MonoBehaviour {
                 GameController.gameType = ENDLESS;
                 GameController.amountOfPlatforms = 0;
                 GameController.score = 0;
-                SceneManager.LoadScene("Game");
+                if (DataDeserializer.Deserialize().getHighestFloors() == 0) SceneManager.LoadScene("Instructions");
+                else SceneManager.LoadScene("Game");
                 break;
             case "Play":
                 GameController.gameType = FLOORS;

@@ -26,7 +26,16 @@ public class FinishController : MonoBehaviour {
             {
                 saving = true;
                 Data dataObject = GameController.dataStorage;
+                dataObject.setMoney(GameController.score);
                 dataObject.setFinishedGames(dataObject.getFinishedGames() + 1);
+                EndGameController.highscore = dataObject.getHighestFloors();
+                EndGameController.floors = GameController.amountOfPlatforms;
+                EndGameController.finished = true;
+                if (dataObject.getHighestFloors() < GameController.amountOfPlatforms)
+                {
+                    dataObject.setHighestFloors(GameController.amountOfPlatforms);
+                }
+                dataObject.setTotalFloors(dataObject.getTotalFloors() + GameController.amountOfPlatforms);
                 DataSerializer.Serialize(dataObject);
                 GameController.dataStorage = dataObject;
                 GameController.score = 0;
@@ -37,7 +46,7 @@ public class FinishController : MonoBehaviour {
             Debug.Log(e.Message);
         } finally {
             saving = false;
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Result");
         }
     }
 }

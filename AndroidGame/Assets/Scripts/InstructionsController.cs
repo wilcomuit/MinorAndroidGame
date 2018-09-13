@@ -16,18 +16,16 @@ public class InstructionsController : MonoBehaviour {
 		
 	}
 
-    void OnMouseUp()
+    public void OnBack()
     {
-        switch (gameObject.tag)
-        {
-            case "BackToMenu":
-                SceneManager.LoadScene("Menu");
-                break;
-            case "Play":
-                SceneManager.LoadScene("Game");
-                break;
-            default:
-                break;
-        }
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void OnStart()
+    {
+        GameController.gameType = -1;
+        GameController.amountOfPlatforms = 0;
+        GameController.score = 0;
+        SceneManager.LoadScene("Game");
     }
 }

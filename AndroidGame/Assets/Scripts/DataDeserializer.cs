@@ -13,6 +13,7 @@ public class DataDeserializer : MonoBehaviour {
 
     public static Data Deserialize()
     {
+        Data.defaultSkinList.Add(1);
         FileStream file;
         if (File.Exists(destination)) file = File.OpenRead(destination);
         else return Data.defaultData;

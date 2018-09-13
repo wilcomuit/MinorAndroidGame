@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using gc = GameController;
+
 public class PlatformController : MonoBehaviour {
 
     public static int AMOUNT_OF_FLOORS = 97;
-    public int goldProbability = 500;
-    public int sandProbability = 150;
-    public int diamondProbability = 0;
-    public int emptyProbability = 350;
-    public int probabilityMultiplier = 1;
 
     void Start () {
     }
@@ -25,21 +22,22 @@ public class PlatformController : MonoBehaviour {
 
     void CreatePlatformSequence()
     {
-        GameController.amountOfPlatforms += 1;
-        GameController.updateFloorCount();
-        if (sandProbability + diamondProbability != 1000) {
-            if (emptyProbability != 0) {
-                goldProbability = goldProbability - probabilityMultiplier;
-                emptyProbability = emptyProbability - probabilityMultiplier;
-            } else goldProbability = goldProbability - (probabilityMultiplier*2);
+        gc.amountOfPlatforms += 1;
+        gc.updateFloorCount();
+        if (gc.sandProbability + gc.diamondProbability != 1000) {
+            if (gc.emptyProbability != 0) {
+                gc.goldProbability = gc.goldProbability - gc.probabilityMultiplier;
+                gc.emptyProbability = gc.emptyProbability - gc.probabilityMultiplier;
+            } else gc.goldProbability = gc.goldProbability - (gc.probabilityMultiplier *2);
 
-            sandProbability += probabilityMultiplier;
-            diamondProbability += probabilityMultiplier;
+            gc.sandProbability += gc.probabilityMultiplier;
+            gc.diamondProbability += gc.probabilityMultiplier;
         }
+        GameController.updateProbability();
 
-        if (GameController.gameType != -1 && GameController.amountOfPlatforms == AMOUNT_OF_FLOORS)
+        if (gc.gameType != -1 && gc.amountOfPlatforms == AMOUNT_OF_FLOORS)
         {
-            GameObject chosen = GameController.prefabEndInstance;
+            GameObject chosen = gc.prefabEndInstance;
             Instantiate(
                     chosen,
                     new Vector3(0, gameObject.transform.position.y - 9f, 0),
@@ -48,10 +46,10 @@ public class PlatformController : MonoBehaviour {
 
             Destroy(gameObject.transform.parent.gameObject);
         }
-        else if (GameController.gameType == -1 || GameController.gameType != -1 && GameController.amountOfPlatforms < AMOUNT_OF_FLOORS)
+        else if (gc.gameType == -1 || gc.gameType != -1 && gc.amountOfPlatforms < AMOUNT_OF_FLOORS)
             {
             int platformIndex = GetPlatformIndex();
-            GameObject chosen = GameController.gameObjectList[platformIndex];
+            GameObject chosen = gc.gameObjectList[platformIndex];
             chosen.transform.position = new Vector3(0, gameObject.transform.position.y - 9f, 0);
             chosen = PickupRandomizer(chosen);
             Instantiate(
@@ -68,12 +66,12 @@ public class PlatformController : MonoBehaviour {
 
     int GetPlatformIndex()
     {
-        int platformIndex = Random.Range(0, GameController.gameObjectList.Count);
-        if (GameController.lastPlatformIndex == platformIndex)
+        int platformIndex = Random.Range(0, gc.gameObjectList.Count);
+        if (gc.lastPlatformIndex == platformIndex)
         {
             return GetPlatformIndex();
         }
-        GameController.lastPlatformIndex = platformIndex;
+        gc.lastPlatformIndex = platformIndex;
         return platformIndex;
     }
 
@@ -84,19 +82,19 @@ public class PlatformController : MonoBehaviour {
             if (child.gameObject.tag == "Pickup")
             {
                 int random = Random.Range(0, 1000);
-                if (random < goldProbability)
+                if (random < gc.goldProbability)
                 {
-                    Instantiate(GameController.pickupList[0], //gold
+                    Instantiate(gc.pickupList[0], //gold
                     child.transform.position,
                     child.transform.rotation);
-                } else if (random > goldProbability && random < goldProbability + sandProbability)
+                } else if (random > gc.goldProbability && random < gc.goldProbability + gc.sandProbability)
                 {
-                    Instantiate(GameController.pickupList[1], //sand
-                       new Vector3(child.transform.position.x, child.transform.position.y - 0.12f, child.transform.position.z),
+                    Instantiate(gc.pickupList[2], //sand
+                       new Vector3(child.transform.position.x, child.transform.position.y - 0.2f, child.transform.position.z),
                        child.transform.rotation);
-                } else if (random > goldProbability + sandProbability && random < goldProbability + sandProbability + diamondProbability)
+                } else if (random > gc.goldProbability + gc.sandProbability && random < gc.goldProbability + gc.sandProbability + gc.diamondProbability)
                 {
-                    Instantiate(GameController.pickupList[0], //diamond
+                    Instantiate(gc.pickupList[1], //diamond
                     child.transform.position,
                     child.transform.rotation);
                 }

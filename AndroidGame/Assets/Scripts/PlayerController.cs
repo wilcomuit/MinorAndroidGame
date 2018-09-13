@@ -1,46 +1,56 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+using g = Globals;
 
 public class PlayerController : MonoBehaviour {
 
     public static float speed;
-    public float startSpeed = 0.05f;
-    public float obstacleSpeed = 0.025f;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
+    bool isFacingRight = true;
+
+
+    public static int moneyMultiplier;
 
 	void Start () {
-        speed = startSpeed;
+        Data data = DataDeserializer.Deserialize();
+
+        speed = g.player_Speed;
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        moneyMultiplier = data.getMoneyMultiplier();
 	}
 
     void Update () {
 
-        if (Input.GetKey("left"))
-        {
-            if(!MenuController.paused) transform.localScale = new Vector3(-0.176f, transform.localScale.y, transform.localScale.z);
-            transform.Translate(-(speed/2), 0, 0);
-        }
-        if (Input.GetKey("right"))
-        {
-            if (!MenuController.paused) transform.localScale = new Vector3(0.176f, transform.localScale.y, transform.localScale.z);
-            transform.Translate((speed/2), 0, 0);
-        }
+        float horizontal = Input.GetAxis("Horizontal");
 
         foreach (Touch touch in Input.touches)
         {
-            //links
             if (touch.position.x < Screen.width / 2)
             {
-                transform.localScale = new Vector3(-0.176f, transform.localScale.y, transform.localScale.z);
-                transform.Translate(-speed, 0, 0);
+                horizontal = -1.5f;
             }
-            //rechts
             else if (touch.position.x > Screen.width / 2)
             {
-                transform.localScale = new Vector3(0.176f, transform.localScale.y, transform.localScale.z);
-                transform.Translate(speed, 0, 0);
+                horizontal = 1.5f;
             }
         }
 
+        transform.Translate(horizontal * speed, 0, 0);
+        if (!MenuController.paused)
+        {
+            animator.SetFloat("speed", Math.Abs(horizontal));
+
+            if (horizontal < 0 && isFacingRight || horizontal > 0 && !isFacingRight)
+            {
+                spriteRenderer.flipX = !spriteRenderer.flipX;
+                isFacingRight = !isFacingRight;
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -48,11 +58,21 @@ public class PlayerController : MonoBehaviour {
         if (other.gameObject.tag == "Pickup")
         {
             Destroy(other.gameObject);
-            GameController.score += 1;
+            GameController.score += (1*moneyMultiplier);
             GameController.updateScore();
-        } else if (other.gameObject.tag == "Obstacle")
+        } else if (other.gameObject.tag == "Pickup2")
         {
-            speed = obstacleSpeed;
+            Destroy(other.gameObject);
+            GameController.score += (25*moneyMultiplier);
+            GameController.updateScore();
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            speed = g.obstacle_Speed;
         }
     }
 
@@ -60,7 +80,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (other.gameObject.tag == "Obstacle")
         {
-            speed = startSpeed;
+            speed = g.player_Speed;
         }
     }
 }
