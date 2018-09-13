@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class SkinsController : MonoBehaviour {
 
-    Data data;
-
     public RuntimeAnimatorController animationSkin1;
     public RuntimeAnimatorController animationSkin2;
     public static List<RuntimeAnimatorController> animationSkinList = new List<RuntimeAnimatorController>();
 
     void Start () {
-        data = DataDeserializer.Deserialize();
         animationSkinList.Add(animationSkin1);
         animationSkinList.Add(animationSkin2);
         RuntimeAnimatorController controller = animationSkinList[DataDeserializer.Deserialize().getSelectedSkin() - 1];
