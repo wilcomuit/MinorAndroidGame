@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Pickup
+  - Score
+  - Play
+  - Endless
+  - Customize
+  - Settings
+  - BackToMenu
+  - FloorCount
+  - Highscore
+  - Obstacle
+  - wallBackground
+  - Pickup2
+  - ProbabilityTest
+  - EndGameMessage
+  - EndGameScore
+  - EndGameMoney
+  - EndGameHighscore
+  - SpeedMultiplier1
+  - SpeedMultiplier2
+  - SpeedMultiplier3
+  - Platform
+  - Indestructible
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - GhostLayer
+  - PlayerLayer
+  - wallLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1338586125
+    locked: 0
+  - name: Middle
+    uniqueID: 2158695895
+    locked: 0
+  - name: Foreground
+    uniqueID: 1300316049
+    locked: 0

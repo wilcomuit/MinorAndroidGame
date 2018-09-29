@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: c998c0af9c3323a4b95b0f07931cb7be
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Customization.unity
+    guid: 96a20deef79df974c93d65769abf7e11
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 9747751d97924cf41a78b94dd6e4a0bb
+  - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: 45e729bc6ed090740886f975332ce298
+  - enabled: 1
+    path: Assets/Scenes/Upgrades.unity
+    guid: 16a545f2f4439cb479b1005ba894d302
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 080f8d26d1ef22849b6cb7717bc48a31
+  - enabled: 1
+    path: Assets/Scenes/Challenge.unity
+    guid: 44ce9b99cdfe01b4295384a9bb588273
+  - enabled: 1
+    path: Assets/Scenes/Challenge100.unity
+    guid: 35ba01f1922c1b648ab8fc8948ac0692
+  - enabled: 1
+    path: Assets/Scenes/Abilities.unity
+    guid: 3bf7da39acf2f7d40a6dd249908a06d6
+  m_configObjects: {}
