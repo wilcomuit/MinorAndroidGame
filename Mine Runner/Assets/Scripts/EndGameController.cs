@@ -64,10 +64,10 @@ public class EndGameController : MonoBehaviour {
 
         GameObject.Find("MoneyGathered").GetComponent<Text>().text = scoredMoney + "";
 
-        if (scoredMoney == 0)
-        {
+        //if (scoredMoney == 0)
+        //{
             GameObject.Find("WatchAd").transform.position = new Vector3(5000, 0, 0);
-        }
+        //}
     }
 
     public void OnClickAd()

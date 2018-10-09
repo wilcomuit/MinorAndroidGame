@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour {
     private float timerMaxAbility = 0;
     private float abilityCooldown = 0f;
 
+    private GameObject playerCollider;
+
     void Start () {
         data = DataDeserializer.Deserialize();
         ghostList = new List<Vector3>();
@@ -78,8 +80,8 @@ public class PlayerController : MonoBehaviour {
         foreach (Touch touch in Input.touches)
         {
             RectTransform transf = abilityButton.GetComponent<RectTransform>();
-            if (touch.position.x < transf.position.x || touch.position.x > transf.position.x + transf.sizeDelta.x ||
-                touch.position.y > transf.position.y || touch.position.y < transf.position.y - transf.sizeDelta.y)
+            if (touch.position.x < transf.position.x - transf.sizeDelta.x || touch.position.x > transf.position.x + transf.sizeDelta.x ||
+                touch.position.y > transf.position.y + transf.sizeDelta.y || touch.position.y < transf.position.y - transf.sizeDelta.y)
             {
                 if (touch.position.x < Screen.width / 2)
                 {
@@ -166,7 +168,7 @@ public class PlayerController : MonoBehaviour {
             }
             animatedMoney = false;
         }
-        if (usedAbility && Waited(abilityCooldown))
+        if (usedAbility && WaitedForAbility(abilityCooldown))
         {
             GameObject.Find("Dash").GetComponent<Image>().color = new Color32(255, 255, 255, 255);
             usedAbility = false;
@@ -222,9 +224,19 @@ public class PlayerController : MonoBehaviour {
 
     void Dash(GameObject collider)
     {
-        transform.position = new Vector3(gameObject.transform.position.x, collider.transform.position.y - (boxCollider.size.y/2), gameObject.transform.position.z);
+        animator.SetBool("isTeleporting", true);
+        playerCollider = collider;
+        WaterController.StopWater();
+    }
+
+    public void DashAbilityEnded()
+    {
+        animator.SetBool("isTeleporting", false);
+        transform.position = new Vector3(gameObject.transform.position.x, playerCollider.transform.position.y - (boxCollider.size.y / 2), gameObject.transform.position.z);
         GameController.amountOfPlatforms += 1;
         GameController.updateFloorCount();
+        playerCollider = null;
+        WaterController.StartWater();
     }
 
     void Jump()
@@ -290,6 +302,7 @@ public class PlayerController : MonoBehaviour {
         } else if (other.gameObject.tag == "Platform")
         {
             isGrounded = true;
+            //animator.SetBool("isGrounded", true);
             abilityButton.GetComponent<Button>().onClick.AddListener(() => Ability(other.gameObject));
         }
     }
@@ -367,6 +380,7 @@ public class PlayerController : MonoBehaviour {
             case "Platform":
                 abilityButton.GetComponent<Button>().onClick.RemoveAllListeners();
                 isGrounded = false;
+                //animator.SetBool("isGrounded", false);
                 break;
             default:
                 break;

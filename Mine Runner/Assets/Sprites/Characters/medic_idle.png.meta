@@ -1,45 +1,45 @@
 fileFormatVersion: 2
-guid: 9949e56b0db49a24b97a6b997bf0ae10
+guid: cf9fb876fe86fc44583ba1e99fb2fb47
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 256x256_Medic_Girl_Idle_0
-    21300002: 256x256_Medic_Girl_Idle_1
-    21300004: 256x256_Medic_Girl_Idle_2
-    21300006: 256x256_Medic_Girl_Idle_3
-    21300008: 256x256_Medic_Girl_Idle_4
-    21300010: 256x256_Medic_Girl_Idle_5
-    21300012: 256x256_Medic_Girl_Idle_6
-    21300014: 256x256_Medic_Girl_Idle_7
-    21300016: 256x256_Medic_Girl_Idle_8
-    21300018: 256x256_Medic_Girl_Idle_9
-    21300020: 256x256_Medic_Girl_Idle_10
-    21300022: 256x256_Medic_Girl_Idle_11
-    21300024: 256x256_Medic_Girl_Idle_12
-    21300026: 256x256_Medic_Girl_Idle_13
-    21300028: 256x256_Medic_Girl_Idle_14
-    21300030: 256x256_Medic_Girl_Idle_15
-    21300032: 256x256_Medic_Girl_Idle_16
-    21300034: 256x256_Medic_Girl_Idle_17
-    21300036: 256x256_Medic_Girl_Idle_18
-    21300038: 256x256_Medic_Girl_Idle_19
-    21300040: 256x256_Medic_Girl_Idle_20
-    21300042: 256x256_Medic_Girl_Idle_21
-    21300044: 256x256_Medic_Girl_Idle_22
-    21300046: 256x256_Medic_Girl_Idle_23
-    21300048: 256x256_Medic_Girl_Idle_24
-    21300050: 256x256_Medic_Girl_Idle_25
-    21300052: 256x256_Medic_Girl_Idle_26
-    21300054: 256x256_Medic_Girl_Idle_27
-    21300056: 256x256_Medic_Girl_Idle_28
-    21300058: 256x256_Medic_Girl_Idle_29
-    21300060: 256x256_Medic_Girl_Idle_30
-    21300062: 256x256_Medic_Girl_Idle_31
-    21300064: 256x256_Medic_Girl_Idle_32
-    21300066: 256x256_Medic_Girl_Idle_33
-    21300068: 256x256_Medic_Girl_Idle_34
-    21300070: 256x256_Medic_Girl_Idle_35
-    21300072: 256x256_Medic_Girl_Idle_36
-    21300074: 256x256_Medic_Girl_Idle_37
+    21300000: medic_idle_0
+    21300002: medic_idle_1
+    21300004: medic_idle_2
+    21300006: medic_idle_3
+    21300008: medic_idle_4
+    21300010: medic_idle_5
+    21300012: medic_idle_6
+    21300014: medic_idle_7
+    21300016: medic_idle_8
+    21300018: medic_idle_9
+    21300020: medic_idle_10
+    21300022: medic_idle_11
+    21300024: medic_idle_12
+    21300026: medic_idle_13
+    21300028: medic_idle_14
+    21300030: medic_idle_15
+    21300032: medic_idle_16
+    21300034: medic_idle_17
+    21300036: medic_idle_18
+    21300038: medic_idle_19
+    21300040: medic_idle_20
+    21300042: medic_idle_21
+    21300044: medic_idle_22
+    21300046: medic_idle_23
+    21300048: medic_idle_24
+    21300050: medic_idle_25
+    21300052: medic_idle_26
+    21300054: medic_idle_27
+    21300056: medic_idle_28
+    21300058: medic_idle_29
+    21300060: medic_idle_30
+    21300062: medic_idle_31
+    21300064: medic_idle_32
+    21300066: medic_idle_33
+    21300068: medic_idle_34
+    21300070: medic_idle_35
+    21300072: medic_idle_36
+    21300074: medic_idle_37
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_0
+      name: medic_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -147,13 +147,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caabbdcf4c0be7d43b910c7686b244b9
+      spriteID: 4247ee23fff2edc41bec8c74c1ff27ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_1
+      name: medic_idle_1
       rect:
         serializedVersion: 2
         x: 256
@@ -167,13 +167,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 190e82344843140498fcf2789deabd16
+      spriteID: adb0cf94c87c7424aaa88c322814efb0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_2
+      name: medic_idle_2
       rect:
         serializedVersion: 2
         x: 512
@@ -187,13 +187,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a1066d3c5085d24b930ad8b90295c32
+      spriteID: b224e88917be6e1478c8bb62d5d30b6a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_3
+      name: medic_idle_3
       rect:
         serializedVersion: 2
         x: 768
@@ -207,13 +207,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38fabc02054ad7b40821c8497be51946
+      spriteID: 42b36f9cb0496814fa92e990f14f73e9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_4
+      name: medic_idle_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -227,13 +227,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b86dec8378eac64ead90251e63ac41a
+      spriteID: c7e2abc54d6d11e49bc14043d57cde0a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_5
+      name: medic_idle_5
       rect:
         serializedVersion: 2
         x: 1280
@@ -247,13 +247,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 682cd21f29a79ef4795bd41e86230c10
+      spriteID: dc7a156525e107c45914768642df07d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_6
+      name: medic_idle_6
       rect:
         serializedVersion: 2
         x: 0
@@ -267,13 +267,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0cd5f1a513f3de41a9f88292138590f
+      spriteID: 990c851ed985544458400e0f7ce50fa1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_7
+      name: medic_idle_7
       rect:
         serializedVersion: 2
         x: 256
@@ -287,13 +287,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b25917754d9a64192693c914833663
+      spriteID: 3e071b5fab4bf3a4b80ef4c5504b4654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_8
+      name: medic_idle_8
       rect:
         serializedVersion: 2
         x: 512
@@ -307,13 +307,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 964009e2b842210438f39ef945ffec07
+      spriteID: b5c703be927d2bf4db42622d0e42ba12
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_9
+      name: medic_idle_9
       rect:
         serializedVersion: 2
         x: 768
@@ -327,13 +327,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536dfbdbc39374346a68a386b2d9f4e8
+      spriteID: 0638904d8727e314ca47a47f949d52e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_10
+      name: medic_idle_10
       rect:
         serializedVersion: 2
         x: 1024
@@ -347,13 +347,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b06b81dfea08d644ab6c6ca7f749f1cd
+      spriteID: b2dcdfeeab530a343a576820ebecd299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_11
+      name: medic_idle_11
       rect:
         serializedVersion: 2
         x: 1280
@@ -367,13 +367,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db548b9e61e9210419411e91f6c1106f
+      spriteID: 10125540f84690f42b836e546e141736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_12
+      name: medic_idle_12
       rect:
         serializedVersion: 2
         x: 0
@@ -387,13 +387,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2c7c055a02f32c44a3ff40f4900d8a8
+      spriteID: 37c74587e07a7f24d8cc884fc578d514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_13
+      name: medic_idle_13
       rect:
         serializedVersion: 2
         x: 256
@@ -407,13 +407,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 238d4f9cde5ad2849b14053ab2dbd2a4
+      spriteID: e13cb16da0bcdd24182a45f910368ff1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_14
+      name: medic_idle_14
       rect:
         serializedVersion: 2
         x: 512
@@ -427,13 +427,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5360812711fe42449af0681479f027b2
+      spriteID: 60488416017d0734db3ca0af82670651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_15
+      name: medic_idle_15
       rect:
         serializedVersion: 2
         x: 768
@@ -447,13 +447,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f7abbd6a72879a4095af42a33293505
+      spriteID: b4a41575d6c582e47826cb771b4d9a2d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_16
+      name: medic_idle_16
       rect:
         serializedVersion: 2
         x: 1024
@@ -467,13 +467,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6344dc030320ea94ea1b284dd444cb56
+      spriteID: 3206d7fb4d09da9459d252d003bececf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_17
+      name: medic_idle_17
       rect:
         serializedVersion: 2
         x: 1280
@@ -487,13 +487,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8d77ec0f09d58844b4161f3f101fb33
+      spriteID: 463ee0de806a9df4b8b3362408f7d354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_18
+      name: medic_idle_18
       rect:
         serializedVersion: 2
         x: 0
@@ -507,13 +507,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdaa5a96379c24645968ae5ed3f672a3
+      spriteID: 7087375fd7c1f314bbb0eada3ff253ff
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_19
+      name: medic_idle_19
       rect:
         serializedVersion: 2
         x: 256
@@ -527,13 +527,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055eced2d40e4294a9dd602347c14a6a
+      spriteID: f07af8342e9f80b4788bd8e47ab08856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_20
+      name: medic_idle_20
       rect:
         serializedVersion: 2
         x: 512
@@ -547,13 +547,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5721782cc6f8c71409d93e0a75c5d408
+      spriteID: 31b8029d0d0e10e4b91ef5261100873f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_21
+      name: medic_idle_21
       rect:
         serializedVersion: 2
         x: 768
@@ -567,13 +567,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aef1abf1d50d14241b2062736c304170
+      spriteID: 9f325779db9027a48af1564d3327e36e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_22
+      name: medic_idle_22
       rect:
         serializedVersion: 2
         x: 1024
@@ -587,13 +587,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 123d00bdd6eefda43ace54ddab3f04ca
+      spriteID: a90b69cf95b8c2444b799a8d4a78b365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_23
+      name: medic_idle_23
       rect:
         serializedVersion: 2
         x: 1280
@@ -607,13 +607,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 570faf5630f040840bc3ca3778ca6008
+      spriteID: f0106e6789b71544fa5d957510e8009b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_24
+      name: medic_idle_24
       rect:
         serializedVersion: 2
         x: 0
@@ -627,13 +627,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f6908ea6755cdc49b80b7bf5e2346f0
+      spriteID: c2ace4a2719c29e4a8e7e7074b3d0b5d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_25
+      name: medic_idle_25
       rect:
         serializedVersion: 2
         x: 256
@@ -647,13 +647,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a841ce09c098004486b88574ecb8469
+      spriteID: 3e0eed63678489a47b726a6c02bc3677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_26
+      name: medic_idle_26
       rect:
         serializedVersion: 2
         x: 512
@@ -667,13 +667,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ffd002cd3e5e1040b643cba4cc7039a
+      spriteID: a4bc547b8e6fa94498ea4b344e5ce168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_27
+      name: medic_idle_27
       rect:
         serializedVersion: 2
         x: 768
@@ -687,13 +687,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3985c3af8b89cc84cbe8d44f2c5dc164
+      spriteID: 931be96d6a7ecdd4ebec379d5ff9f391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_28
+      name: medic_idle_28
       rect:
         serializedVersion: 2
         x: 1024
@@ -707,13 +707,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ec490e992194aa4d9d033da42d3127f
+      spriteID: f067244427e045d48ba0e1f662bba3b9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_29
+      name: medic_idle_29
       rect:
         serializedVersion: 2
         x: 1280
@@ -727,13 +727,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 703d1585d81cb38488644b0b0f4abffb
+      spriteID: 09aa5652cf950534aaf5928a5fb119c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_30
+      name: medic_idle_30
       rect:
         serializedVersion: 2
         x: 0
@@ -747,13 +747,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a54143445dc523429f5002785050974
+      spriteID: df27d9477d52dbc498acb5d63961e681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_31
+      name: medic_idle_31
       rect:
         serializedVersion: 2
         x: 256
@@ -767,13 +767,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 803d13d724b43b642990ff923385be0c
+      spriteID: dcd2c6676e6f5c24d89c7c7d9566b84d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_32
+      name: medic_idle_32
       rect:
         serializedVersion: 2
         x: 512
@@ -787,13 +787,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af60b3f868df6144192ef85a3f6a3d04
+      spriteID: 8cc75371a7cb71048afe30cc4e149b8b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_33
+      name: medic_idle_33
       rect:
         serializedVersion: 2
         x: 768
@@ -807,13 +807,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e65cf695b656067409dd2ae58a1b21d1
+      spriteID: 6c5ad1321e88e1b4b9e6982b46c16bef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_34
+      name: medic_idle_34
       rect:
         serializedVersion: 2
         x: 1024
@@ -827,13 +827,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48afc3df12ac4ff47994fd50df65e274
+      spriteID: 748fff58a2b9e7a4785921b1759e6d15
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_35
+      name: medic_idle_35
       rect:
         serializedVersion: 2
         x: 1280
@@ -847,13 +847,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c7e3695398f8ae438741632596bff59
+      spriteID: b4167ddabfbc9d44cbb093416e892bc2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_36
+      name: medic_idle_36
       rect:
         serializedVersion: 2
         x: 0
@@ -867,13 +867,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c96840cb7aadd1c4189435e75419753e
+      spriteID: 0012266464412d5439f057c271b85767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 256x256_Medic_Girl_Idle_37
+      name: medic_idle_37
       rect:
         serializedVersion: 2
         x: 256
@@ -887,7 +887,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bfddb29aefbad04b82df84961825c37
+      spriteID: e69355956e47c304f88346bdcb9dc302
       vertices: []
       indices: 
       edges: []
@@ -895,7 +895,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0c78135d0ce68444e82dda2fae1e84c8
+    spriteID: 9b17310235ba6454e80ab71712c2a53d
     vertices: []
     indices: 
     edges: []
